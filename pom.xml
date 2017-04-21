@@ -12,6 +12,7 @@
         <module>services</module>
         <module>ear</module>
         <module>ui</module>
+        <module>hibernate</module>
     </modules>
 
 

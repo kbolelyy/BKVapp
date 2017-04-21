@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="authorization" />
         <module name="ear" />
+        <module name="hibernate" />
         <module name="ui" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="authorization" target="1.5" />
       <module name="BKVapp" target="1.5" />
       <module name="ear" target="1.5" />
+      <module name="hibernate" target="1.5" />
       <module name="services" target="1.5" />
       <module name="ui" target="1.5" />
     </bytecodeTargetLevel>
