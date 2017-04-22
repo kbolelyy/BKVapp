@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="bkv">
+    <output-path>$PROJECT_DIR$/out/artifacts/bkv</output-path>
+    <root id="root" />
+  </artifact>
+</component>
