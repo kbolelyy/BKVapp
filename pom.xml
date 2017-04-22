@@ -13,7 +13,10 @@
         <module>ear</module>
         <module>ui</module>
         <module>hibernate</module>
+        <module>web</module>
     </modules>
+
+
 
 <dependencies>
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->

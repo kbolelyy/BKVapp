@@ -10,6 +10,7 @@
         <module name="ear" />
         <module name="hibernate" />
         <module name="ui" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="hibernate" target="1.5" />
       <module name="services" target="1.5" />
       <module name="ui" target="1.5" />
+      <module name="web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
