@@ -5,7 +5,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+//
 public class HibernateSessionFactory {
 
     private static final Logger log = LoggerFactory.getLogger(HibernateSessionFactory.class);
