@@ -1,4 +1,4 @@
-package pojo;
+package model;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -7,30 +7,25 @@ import java.util.Date;
  * Created by KBolelyy on 19.05.2017.
  */
 
-// объект пользователь
+// Model User
 
 @Entity
-@Table(name = "Users")
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    @Column(nullable = false)
     private String login;
+    @Column(nullable = false)
     private String password;
+    @Column(nullable = false)
     private String email;
     private String firstName;
     private String lastName;
     private Date createDate;
 
     public User() {
+
     }
 
-    public User(String login, String firstName, String lastName, String email) {
-        this.login = login;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
 
     public long getId() {
         return id;
@@ -91,10 +86,13 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "login='" + login + '\'' +
+                "id=" + id +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
+                ", createDate=" + createDate +
                 '}';
     }
 }

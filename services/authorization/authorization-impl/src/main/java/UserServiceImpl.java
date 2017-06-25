@@ -1,5 +1,5 @@
 import api.UserService;
-import pojo.User;
+import model.User;
 
 /**
  * Created by KBolelyy on 19.05.2017.
@@ -11,9 +11,8 @@ public class UserServiceImpl implements UserService {
     }
 
 
-
     public User createUser(String login, String email, String firstName, String lastName) {
-        return new User(login, email, firstName, lastName);
+        return null;
     }
 
     public void updateUser(User user) {

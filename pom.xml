@@ -10,7 +10,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>services</module>
-        <module>ear</module>
         <module>ui</module>
         <module>hibernate</module>
         <module>web</module>

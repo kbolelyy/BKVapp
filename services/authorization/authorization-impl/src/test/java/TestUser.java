@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import pojo.User;
+import model.User;
 
 import java.util.ArrayList;
 
@@ -15,12 +15,13 @@ public class TestUser extends Assert {
     private ArrayList<User> users = new ArrayList<User>();
 
 
-    @Before
+   /* @Before
     public void initializeUsers() {
         users.add(new User("A", "A@mail.com", "Человек1", "Человекович1"));
         users.add(new User("B", "B@mail.com", "Человек2", "Человекович2"));
         users.add(new User("C", "C@mail.com", "Человек3", "Человекович3"));
     }
+
 
 
     @Test
@@ -34,7 +35,7 @@ public class TestUser extends Assert {
         Assert.assertNotNull("Must be not null", usersTest);
         Assert.assertEquals("Size must be 2", usersTest.size(), 2);
 
-    }
+    }*/
 
 
 

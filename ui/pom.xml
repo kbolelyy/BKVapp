@@ -10,5 +10,22 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ui</artifactId>
 
+   <dependencies>
+       <!-- https://mvnrepository.com/artifact/org.icefaces/icefaces -->
+       <dependency>
+           <groupId>org.icefaces</groupId>
+           <artifactId>icefaces</artifactId>
+           <version>4.2.0</version>
+       </dependency>
+
+       <!-- https://mvnrepository.com/artifact/org.icefaces.ace-themes/ace-smoothness -->
+       <dependency>
+           <groupId>org.icefaces.ace-themes</groupId>
+           <artifactId>ace-smoothness</artifactId>
+           <version>4.2.0</version>
+       </dependency>
+
+   </dependencies>
+    <packaging>war</packaging>
 
 </project>

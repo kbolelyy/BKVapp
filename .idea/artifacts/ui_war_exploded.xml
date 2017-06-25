@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ui:war exploded">
+    <output-path>$PROJECT_DIR$/ui/target/ui-0.0.1-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ui" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.icefaces:icefaces:4.2.0" />
+          <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.2.14" />
+          <element id="library" level="project" name="Maven: org.icefaces.ace-themes:ace-smoothness:4.2.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.19" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.7.25" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ui/target/ui-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ui/web/Web" />
+    </root>
+  </artifact>
+</component>

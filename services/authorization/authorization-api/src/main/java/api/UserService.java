@@ -1,6 +1,6 @@
 package api;
 
-import pojo.User;
+import model.User;
 
 /**
  * Created by KBolelyy on 19.05.2017.
