@@ -12,7 +12,6 @@
         <module>services</module>
         <module>ui</module>
         <module>hibernate</module>
-        <module>web</module>
     </modules>
 
 
