@@ -1,11 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
-
 import model.User;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+
+/*
+* Класс отвечающий за изменения пользовательских данных в бд.
+*/
 
 public class UserDao {
 

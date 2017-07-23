@@ -18,6 +18,6 @@
         <property name="current_session_context_class">thread</property>
 
         <!-- Mapping files -->
-        <mapping resource="user.hbm.xml" />
+        <mapping resource="mappings/user.hbm.xml" />
     </session-factory>
 </hibernate-configuration>

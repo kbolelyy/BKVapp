@@ -12,7 +12,9 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/ear/pom.xml" />
+        <option value="$PROJECT_DIR$/gwt/pom.xml" />
         <option value="$PROJECT_DIR$/services/authorization/pom.xml" />
+        <option value="$PROJECT_DIR$/ui/pom.xml" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
       </set>
     </option>
