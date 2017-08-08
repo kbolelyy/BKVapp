@@ -7,7 +7,7 @@ import java.util.Date;
  * Created by KBolelyy on 19.05.2017.
  */
 
-// Model User
+// Сущность для базы данных
 
 @Entity
 public class User {

@@ -9,7 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ui</artifactId>
+    <artifactId>gwt-ext</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>BKVapp</groupId>
+            <artifactId>authorization-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

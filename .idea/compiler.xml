@@ -9,9 +9,8 @@
         <module name="authorization-api" />
         <module name="authorization-impl" />
         <module name="authorizationi-mpl" />
-        <module name="gwt" />
+        <module name="gwt-ext" />
         <module name="hibernate" />
-        <module name="ui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,10 +23,11 @@
       <module name="BKVapp" target="1.8" />
       <module name="ear" target="1.5" />
       <module name="gwt" target="1.8" />
+      <module name="gwt-ext" target="1.8" />
       <module name="hibernate" target="1.8" />
       <module name="services" target="1.8" />
       <module name="ui" target="1.8" />
-      <module name="web" target="1.5" />
+      <module name="web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

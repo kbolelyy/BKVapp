@@ -2,17 +2,19 @@ package api;
 
 import model.User;
 
+import javax.ejb.Local;
 import java.util.List;
 
 /**
  * Created by KBolelyy on 19.05.2017.
  */
+@Local
 public interface UserService {
 
     /*
     *   создание пользователя
     */
-    User createUser(String login, String email, String password, String firstName, String lastName);
+   String createUser(User user);
 
     /*
     *   обновление пользователя

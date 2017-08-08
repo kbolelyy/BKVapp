@@ -11,8 +11,7 @@
     <modules>
         <module>services</module>
         <module>hibernate</module>
-        <module>ui</module>
-        <module>gwt</module>
+        <module>gwt-ext</module>
     </modules>
 
     <build>

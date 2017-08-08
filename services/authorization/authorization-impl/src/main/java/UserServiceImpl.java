@@ -1,32 +1,26 @@
 import api.UserService;
 import model.User;
 
-import javax.ejb.EJB;
+import javax.ejb.Local;
 import javax.ejb.Stateless;
-import javax.validation.constraints.NotNull;
+import javax.inject.Inject;
 import java.util.List;
+
+// Бин который отвечает за сервис работы с базой данных
 
 @Stateless
 public class UserServiceImpl implements UserService {
 
-
-    @EJB private UserDao userDao = new UserDao();
+    @Inject
+    private UserDao userDao;
 
     public UserServiceImpl() {
     }
 
 
-    public User createUser(@NotNull String login, @NotNull String email, @NotNull String password,
-                           String firstName, String lastName) {
-        User user = new User();
-        user.setLogin(login);
-        user.setEmail(email);
-        user.setPassword(password);
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
+    public String createUser(User user) {
         userDao.addUser(user);
-
-        return user;
+        return user.getLogin();
     }
 
     public void updateUser(User user) {
