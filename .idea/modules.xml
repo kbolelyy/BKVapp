@@ -3,12 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BKVapp.iml" filepath="$PROJECT_DIR$/BKVapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/authorization/authorization.iml" filepath="$PROJECT_DIR$/services/authorization/authorization.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/authorization/authorization-api/authorization-api.iml" filepath="$PROJECT_DIR$/services/authorization/authorization-api/authorization-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/authorization/authorization-impl/authorization-impl.iml" filepath="$PROJECT_DIR$/services/authorization/authorization-impl/authorization-impl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gwt-ext/gwt-ext.iml" filepath="$PROJECT_DIR$/gwt-ext/gwt-ext.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hibernate/hibernate.iml" filepath="$PROJECT_DIR$/hibernate/hibernate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gwt/gwt.iml" filepath="$PROJECT_DIR$/gwt/gwt.iml" />
     </modules>
   </component>
 </project>

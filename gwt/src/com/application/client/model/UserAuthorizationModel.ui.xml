@@ -1,0 +1,17 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel>
+        <div class="login-page">
+            <div class="form">
+                <form class="login-form">
+                    <input ui:field='firstName' placeholder="first name"/>
+                    <input ui:field='lastName' placeholder="last name"/>
+                    <input ui:field='email' placeholder="email"/>
+                    <input ui:field='login' placeholder="login"/>
+                    <input ui:field='password' type="password" placeholder="password"/>
+                    <g:Button ui:field='create'>create</g:Button>
+                </form>
+            </div>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

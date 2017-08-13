@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="authorization-api" />
-        <module name="authorization-impl" />
         <module name="authorizationi-mpl" />
-        <module name="gwt-ext" />
-        <module name="hibernate" />
+        <module name="gwt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
