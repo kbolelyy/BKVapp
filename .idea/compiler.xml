@@ -6,19 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="authorization" />
-        <module name="ear" />
-        <module name="hibernate" />
-        <module name="ui" />
+        <module name="authorizationi-mpl" />
+        <module name="gwt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="authorization" target="1.5" />
-      <module name="BKVapp" target="1.5" />
+      <module name="authorization" target="1.8" />
+      <module name="authorization-api" target="1.8" />
+      <module name="authorization-impl" target="1.8" />
+      <module name="authorizationapi" target="1.5" />
+      <module name="authorizationi-impl" target="1.5" />
+      <module name="authorizationi-mpl" target="1.5" />
+      <module name="BKVapp" target="1.8" />
       <module name="ear" target="1.5" />
-      <module name="hibernate" target="1.5" />
-      <module name="services" target="1.5" />
-      <module name="ui" target="1.5" />
+      <module name="gwt" target="1.8" />
+      <module name="gwt-ext" target="1.8" />
+      <module name="hibernate" target="1.8" />
+      <module name="services" target="1.8" />
+      <module name="ui" target="1.8" />
+      <module name="web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
