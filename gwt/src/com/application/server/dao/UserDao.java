@@ -72,7 +72,7 @@ public class UserDao {
     }
 
  public List<UsersEntity> getAllUsers() {
-        List<UsersEntity> users = new ArrayList<UsersEntity>();
+       /* List<UsersEntity> users = new ArrayList<UsersEntity>();
         Transaction trns = null;
         Session session = HibernateUtil.getSessionFactory().openSession();
         try {
@@ -83,13 +83,13 @@ public class UserDao {
         } finally {
             session.flush();
             session.close();
-        }
-        return users;
+        }*/
+        return null;
     }
 
 
     public UsersEntity getUserById(int userid) {
-        UsersEntity user = null;
+      /*  UsersEntity user = null;
         Transaction trns = null;
         Session session = HibernateUtil.getSessionFactory().openSession();
         try {
@@ -104,6 +104,8 @@ public class UserDao {
             session.flush();
             session.close();
         }
-        return user;
+        return user;*/
+
+      return null;
     }
 }

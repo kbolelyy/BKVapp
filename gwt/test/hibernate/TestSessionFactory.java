@@ -1,7 +1,8 @@
 package hibernate;
 
 import hibernate.utils.HibernateSessionFactory;
-import org.hibernate.Session;
+import hibernate.utils.HibernateUtil;
+import org.junit.Test;
 
 
 /**
@@ -11,8 +12,9 @@ import org.hibernate.Session;
 
 public class TestSessionFactory {
 
-    public static void main(String[] args) {
-        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+    @Test
+   public void testOpenSessionHibernate(){
+        HibernateSessionFactory.getSessionFactory().openSession();
 
     }
 }

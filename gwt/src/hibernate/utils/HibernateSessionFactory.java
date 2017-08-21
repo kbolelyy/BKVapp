@@ -4,23 +4,21 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.SessionFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 /**
- * Created by KBolelyy on 13.08.2017.
+ * Фабрика сессий для соединения с БД
  */
 
 public class HibernateSessionFactory {
 
-    private static final Logger log = LoggerFactory.getLogger(HibernateSessionFactory.class);
+
     private static SessionFactory sessionFactory = buildSessionFactory();
 
     protected static SessionFactory buildSessionFactory() {
         // A SessionFactory is set up once for an application!
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure() // configures settings from hibernate.cfg.xml
+                .configure("hibernate/utils/hibernate.cfg.xml") // configures settings from hibernate.cfg.xml
                 .build();
         try {
             sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
@@ -31,7 +29,7 @@ public class HibernateSessionFactory {
 
             throw new ExceptionInInitializerError("Initial SessionFactory failed: " + e);
         }
-        log.info("Connection session of hibernate successful.");
+
         return sessionFactory;
     }
 
