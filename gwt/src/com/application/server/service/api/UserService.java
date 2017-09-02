@@ -13,7 +13,7 @@ public interface UserService {
     /*
     *   создание пользователя
     */
-   String createUser(UsersEntity user);
+    void addUser(UsersEntity user);
 
     /*
     *   обновление пользователя
@@ -23,7 +23,7 @@ public interface UserService {
     /*
     *   удаление пользователя
     */
-    void deleteUser(UsersEntity user);
+    void deleteUser(long userid);
 
     /*
     *  получение всех пользователей

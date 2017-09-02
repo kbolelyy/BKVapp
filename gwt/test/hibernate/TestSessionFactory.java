@@ -1,7 +1,6 @@
 package hibernate;
 
-import hibernate.utils.HibernateSessionFactory;
-import hibernate.utils.HibernateUtil;
+import com.application.server.hibernate.utils.HibernateSessionFactory;
 import org.junit.Test;
 
 

@@ -1,7 +1,8 @@
 package com.application.server.dao;
 
 import com.application.server.hibernate.entity.UsersEntity;
-import hibernate.utils.HibernateUtil;
+import com.application.server.service.api.UserService;
+import com.application.server.hibernate.utils.HibernateUtil;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 
 
-public class UserDao {
+public class UserDao implements UserService {
 
     public void addUser(UsersEntity user) {
         Transaction trns = null;
@@ -29,8 +30,7 @@ public class UserDao {
             }
             e.printStackTrace();
         } finally {
-            session.flush();
-            session.close();
+                session.close();
         }
     }
 
@@ -72,7 +72,7 @@ public class UserDao {
     }
 
  public List<UsersEntity> getAllUsers() {
-       /* List<UsersEntity> users = new ArrayList<UsersEntity>();
+        List<UsersEntity> users = new ArrayList<UsersEntity>();
         Transaction trns = null;
         Session session = HibernateUtil.getSessionFactory().openSession();
         try {
@@ -83,13 +83,13 @@ public class UserDao {
         } finally {
             session.flush();
             session.close();
-        }*/
+        }
         return null;
     }
 
 
     public UsersEntity getUserById(int userid) {
-      /*  UsersEntity user = null;
+        UsersEntity user = null;
         Transaction trns = null;
         Session session = HibernateUtil.getSessionFactory().openSession();
         try {
@@ -104,8 +104,7 @@ public class UserDao {
             session.flush();
             session.close();
         }
-        return user;*/
+        return user;
 
-      return null;
     }
 }

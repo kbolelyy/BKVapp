@@ -14,6 +14,11 @@
 
 
     <!-- Specify the app servlets.                   -->
-    <servlet path='/ApplicationService' class='com.application.server.service.impl.ApplicationServiceImpl'/>
+    <servlet path='/ApplicationService' class='com.application.server.service.impl.application.ApplicationServiceImpl'/>
+    <servlet path='/AuthorizationService' class='com.application.server.service.impl.authorization.AuthorizationServiceImpl'/>
+    <source path="client"/>
+    <source path="server"/>
+    <source path="navigale"/>
+
 
 </module>

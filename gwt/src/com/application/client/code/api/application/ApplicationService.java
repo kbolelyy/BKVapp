@@ -1,4 +1,4 @@
-package com.application.client.code.api;
+package com.application.client.code.api.application;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.RemoteService;

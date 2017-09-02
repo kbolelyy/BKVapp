@@ -1,4 +1,4 @@
-package hibernate.utils;
+package com.application.server.hibernate.utils;
 
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -18,7 +18,7 @@ public class HibernateSessionFactory {
     protected static SessionFactory buildSessionFactory() {
         // A SessionFactory is set up once for an application!
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure("hibernate/utils/hibernate.cfg.xml") // configures settings from hibernate.cfg.xml
+                .configure("com/application/server/hibernate/utils/hibernate.cfg.xml") // configures settings from hibernate.cfg.xml
                 .build();
         try {
             sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();

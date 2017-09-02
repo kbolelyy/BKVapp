@@ -1,8 +1,12 @@
 package com.application.server.hibernate.entity;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Date;
@@ -12,7 +16,7 @@ import java.sql.Date;
  */
 @Entity
 @Table(name = "users", schema = "bkv")
-public class UsersEntity {
+public class UsersEntity implements IsSerializable {
     private long id;
     private String login;
     private String email;
@@ -22,6 +26,7 @@ public class UsersEntity {
     private Date dateCreated;
 
     @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     public long getId() {
         return id;
